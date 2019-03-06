@@ -48,3 +48,22 @@ var dataObject = [ProductList]()
         }) { (error) in
              print("Post Error::- \(error)")
         }
+        
+        
+# Image Picker
+
+     Call ImageCallBackDelegate 
+    
+Take UIView and give class ImagePickerController in storyboard and delegate it inside viewdidload
+
+    @IBOutlet weak var Image_View: ImagePickerController!
+    Image_View.imagedelegate = self
+    
+Call callback method here you will get image in NSData format you can convert it in base64 format and upload in sever
+
+      func getImageData(image: NSData) {
+        print("Get My Image \(image)")
+        // Mark: Here image is NSData
+        let base64String = image.base64EncodedString(options: [])
+        print("base 64 image \(base64String)")
+    }
