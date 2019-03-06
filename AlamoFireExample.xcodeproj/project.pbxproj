@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AB92924C222936A1009C3207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92924B222936A1009C3207 /* AppDelegate.swift */; };
-		AB92924E222936A1009C3207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92924D222936A1009C3207 /* ViewController.swift */; };
+		AB92924E222936A1009C3207 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92924D222936A1009C3207 /* HomeViewController.swift */; };
 		AB929251222936A1009C3207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB92924F222936A1009C3207 /* Main.storyboard */; };
 		AB929253222936A4009C3207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB929252222936A4009C3207 /* Assets.xcassets */; };
 		AB929256222936A4009C3207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB929254222936A4009C3207 /* LaunchScreen.storyboard */; };
+		AB9292632229434D009C3207 /* ServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9292622229434D009C3207 /* ServiceWrapper.swift */; };
+		AB9292652229472F009C3207 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9292642229472F009C3207 /* ProductList.swift */; };
+		AB92926C222F83B8009C3207 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92926B222F83B8009C3207 /* ProductListTableViewCell.swift */; };
+		AB92926E222F9EF2009C3207 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92926D222F9EF2009C3207 /* AddProductViewController.swift */; };
 		E6ADB8F67D5082EA19C321FE /* Pods_AlamoFireExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A09C3F152019009104DDEF1 /* Pods_AlamoFireExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +25,15 @@
 		95CD3FBBE771919C7604C61C /* Pods-AlamoFireExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFireExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoFireExample/Pods-AlamoFireExample.debug.xcconfig"; sourceTree = "<group>"; };
 		AB929248222936A1009C3207 /* AlamoFireExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamoFireExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92924B222936A1009C3207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB92924D222936A1009C3207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB92924D222936A1009C3207 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AB929250222936A1009C3207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB929252222936A4009C3207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB929255222936A4009C3207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB929257222936A4009C3207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9292622229434D009C3207 /* ServiceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceWrapper.swift; sourceTree = "<group>"; };
+		AB9292642229472F009C3207 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		AB92926B222F83B8009C3207 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		AB92926D222F9EF2009C3207 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +92,6 @@
 				AB92925E22293BC3009C3207 /* View */,
 				AB92925D22293BB9009C3207 /* Model */,
 				AB92924B222936A1009C3207 /* AppDelegate.swift */,
-				AB92924D222936A1009C3207 /* ViewController.swift */,
-				AB92924F222936A1009C3207 /* Main.storyboard */,
-				AB929252222936A4009C3207 /* Assets.xcassets */,
-				AB929254222936A4009C3207 /* LaunchScreen.storyboard */,
 				AB929257222936A4009C3207 /* Info.plist */,
 			);
 			path = AlamoFireExample;
@@ -96,6 +100,7 @@
 		AB92925D22293BB9009C3207 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AB9292642229472F009C3207 /* ProductList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +108,10 @@
 		AB92925E22293BC3009C3207 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB92924F222936A1009C3207 /* Main.storyboard */,
+				AB929252222936A4009C3207 /* Assets.xcassets */,
+				AB929254222936A4009C3207 /* LaunchScreen.storyboard */,
+				AB92926B222F83B8009C3207 /* ProductListTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +119,8 @@
 		AB92925F22293BCC009C3207 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AB92924D222936A1009C3207 /* HomeViewController.swift */,
+				AB92926D222F9EF2009C3207 /* AddProductViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -117,6 +128,7 @@
 		AB92926022293BD8009C3207 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AB9292622229434D009C3207 /* ServiceWrapper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -248,7 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB92924E222936A1009C3207 /* ViewController.swift in Sources */,
+				AB92924E222936A1009C3207 /* HomeViewController.swift in Sources */,
+				AB9292652229472F009C3207 /* ProductList.swift in Sources */,
+				AB92926E222F9EF2009C3207 /* AddProductViewController.swift in Sources */,
+				AB92926C222F83B8009C3207 /* ProductListTableViewCell.swift in Sources */,
+				AB9292632229434D009C3207 /* ServiceWrapper.swift in Sources */,
 				AB92924C222936A1009C3207 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
