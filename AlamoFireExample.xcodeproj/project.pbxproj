@@ -16,6 +16,7 @@
 		AB9292652229472F009C3207 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9292642229472F009C3207 /* ProductList.swift */; };
 		AB92926C222F83B8009C3207 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92926B222F83B8009C3207 /* ProductListTableViewCell.swift */; };
 		AB92926E222F9EF2009C3207 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92926D222F9EF2009C3207 /* AddProductViewController.swift */; };
+		AB929270222FA4AC009C3207 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92926F222FA4AC009C3207 /* ImagePickerController.swift */; };
 		E6ADB8F67D5082EA19C321FE /* Pods_AlamoFireExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A09C3F152019009104DDEF1 /* Pods_AlamoFireExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		AB9292642229472F009C3207 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		AB92926B222F83B8009C3207 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
 		AB92926D222F9EF2009C3207 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		AB92926F222FA4AC009C3207 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		AB92926122293BE9009C3207 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				AB92926F222FA4AC009C3207 /* ImagePickerController.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				AB92926E222F9EF2009C3207 /* AddProductViewController.swift in Sources */,
 				AB92926C222F83B8009C3207 /* ProductListTableViewCell.swift in Sources */,
 				AB9292632229434D009C3207 /* ServiceWrapper.swift in Sources */,
+				AB929270222FA4AC009C3207 /* ImagePickerController.swift in Sources */,
 				AB92924C222936A1009C3207 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,15 +8,36 @@
 
 import UIKit
 
-class AddProductViewController: UIViewController {
+class AddProductViewController: UIViewController, ImageCallBackDelegate {
+    
+    
 
+    @IBOutlet weak var Image_View: ImagePickerController!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+       
+
+       Image_View.imagedelegate = self
     }
     
-
+    func getImageData(image: NSData) {
+        print("Get My Image \(image)")
+        // Mark: Here image is NSData
+        let base64String = image.base64EncodedString(options: [])
+        print("base 64 image \(base64String)")
+    }
+    
+    @IBAction func saveBtn(_ sender: Any) {
+    }
+    
+    @IBAction func dismisBtn(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
